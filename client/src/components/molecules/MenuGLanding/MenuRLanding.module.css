@@ -1,0 +1,48 @@
+.settings{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 10px 20px;
+ 
+ }
+ .settingsItemA,
+ .settingsItemB,
+ .settingsItemC,
+ .settingsItemD,
+ .settingsItemE {
+     content: "";
+     width: 60px;
+     height: 60px;
+     cursor: pointer;
+     transition: 0.9s ease-in-out;
+ }
+ 
+ .settingsItemA:hover,
+ .settingsItemB:hover,
+ .settingsItemC:hover,
+ .settingsItemD:hover,
+ .settingsItemE:hover {
+     transition: 0.5s ease-in-out;
+     transform: scale(1.1) rotate(10deg);
+ }
+ 
+ .settingsItemA{
+     background-image: url("../../../assets/images/settings/set1.png");
+ 
+ }
+ .settingsItemB{
+     background-image: url("../../../assets/images/settings/set2.png");
+ 
+ }
+ .settingsItemC{
+     background-image: url("../../../assets/images/settings/set3.png");
+ 
+ }
+ .settingsItemD{
+     background-image: url("../../../assets/images/settings/set4.png");
+     
+ }
+ .settingsItemE{
+     background-image: url("../../../assets/images/settings/set5.png");
+ 
+ }

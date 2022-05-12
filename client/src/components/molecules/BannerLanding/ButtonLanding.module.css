@@ -1,0 +1,34 @@
+.ButtonLanding{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    top: 0;
+    margin: auto;
+    z-index: 8;
+
+    cursor: pointer;
+    transition: 1.5s ease-in-out;
+
+    animation: appear 50s ease-in-out 1s infinite;
+    opacity: 0;
+}
+
+
+.ButtonLanding:hover{
+    transition: 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: .9;
+    }
+    100%{
+        opacity: 1;
+    }
+}

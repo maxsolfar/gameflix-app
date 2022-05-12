@@ -1,0 +1,9 @@
+.background{
+    background-image: url("../../../assets/images/back.jpg");
+    background-color: rgba(0, 0, 21, 1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

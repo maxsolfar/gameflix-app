@@ -1,0 +1,167 @@
+.Background{
+    background-image: url("../../../assets/svg/back.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 75vh;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 2px 60px rgba(21,21,21,.5);
+    border: 20px solid rgb(0, 0, 0);
+    outline: 12px solid rgb(21, 21, 21);
+
+}
+
+.Logo{
+
+    width: 28%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    z-index: 6;
+    opacity: 1;
+}
+
+.Menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Atmosphere{
+    background-image: url("../../../assets/images/ground-c.png");
+    background-repeat: repeat-x;
+    width: 1000%;
+    height: 500px;
+    position: absolute;
+    bottom: -15%;
+    animation: moveRight 60s linear infinite;
+    z-index: 1;
+    opacity: 0.6;
+    
+} 
+
+
+.Bats{
+    background-image: url("../../../assets/images/bats.png");
+    background-repeat: repeat-x;
+    height: 78px;
+    width: 1000%;
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    opacity: 0.3;
+    left: -10px;
+    animation: moveRight 60s linear infinite;
+    z-index: 2;
+}
+
+.Ground{
+    background-image: url("../../../assets/images/ground.png");
+    background-repeat: repeat-x;
+    height: 109px;
+    width: 1000%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    animation: moveRight 60s linear infinite;
+    z-index: 2;
+}
+
+.Character{
+    background-image: url("../../../assets/images/character.png");
+    width: 125px;
+    height: 140px;
+    z-index: 4;
+    position: absolute;
+    bottom: 4%;
+    left: 60%;
+
+    animation: walk 1.5s steps(8) infinite,
+                forwards 15s linear infinite;
+}
+
+.CharacterB{
+    background-image: url("../../../assets/images/character-c.png");
+    width: 125px;
+    height: 140px;
+    z-index: 3; 
+    position: absolute;
+    bottom: 5%; 
+    left: -15%;
+
+    animation: run 1.5s steps(12) infinite,
+                forward2 40s linear infinite;
+}
+
+.CharacterC{
+    background-image: url("../../../assets/images/character-e.png");
+    width: 125px;
+    height: 140px;
+    z-index: 3; 
+    position: absolute;
+    bottom: 5%; 
+    left: -40%;
+
+    animation: run 1.5s steps(12) infinite,
+                forward2 40s linear infinite;
+}
+
+.CharacterD{
+    background-image: url("../../../assets/images/character-d.png");
+    width: 125px;
+    height: 140px;
+    z-index: 5; 
+    position: absolute;
+    bottom: 4%; 
+    left: 25%;
+
+    animation: walk 2.0s steps(8) infinite,
+                forward 60s linear infinite;
+}
+
+@keyframes run{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1500px;
+    }
+}
+
+@keyframes forward2{
+    0%{
+        transform: translateX(-125px);
+    }
+    100%{
+        transform: translateX(2500px);
+    }
+}
+
+
+@keyframes walk{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+
+@keyframes forwards{
+    0%{
+        transform: translateX(-125px);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes moveRight{
+    100%{transform: translateX(-6000px);}
+}

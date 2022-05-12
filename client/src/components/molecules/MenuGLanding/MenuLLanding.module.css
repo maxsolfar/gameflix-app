@@ -1,0 +1,32 @@
+.lifePoints{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 20px;
+    gap: 10px;
+ }
+ .lifePointsA,
+ .lifePointsB {
+    width: 40%;
+    cursor: pointer;
+    transition: 0.9s ease-in-out;
+    animation: bounce 2.5s ease-in-out infinite;
+ }
+
+ .lifePointsB{
+    margin-top: -6px;
+ }
+ 
+ @keyframes bounce{
+     0%{
+        transform: scale(.9);
+     }
+     50%{
+        transform: scale(1);
+     }
+     100%{
+         transform: scale(.9);
+     }
+ }
+ 
