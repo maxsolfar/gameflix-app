@@ -1,0 +1,56 @@
+.Pagination{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 6px;
+
+    list-style: none;
+    margin: 20px 0 20px 0;
+
+    /* list-style: none;
+    padding: 10px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 49;
+    background: rgba(255,255,255,.8);
+    padding: 10px 20px;
+    border-radius: 20px; */
+}
+
+.ButtonPaginate{
+    border-style: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .9s ease-in;
+    display: flex;
+    align-items: center;
+}
+
+
+.ButtonPaginate:hover{
+    transition: .5s ease-in;
+    transform: scale(1.05);
+}
+.Numbers, .NumberActive{
+    border-style: none;
+    border-radius: 5px;
+    padding: 8px 14px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: .9s ease-in;
+}
+.Numbers{
+    background-color: #252C38;
+}
+.Numbers:hover{
+    transition: .5s ease-in;
+    transform: scale(1.05);
+}
+
+.NumberActive {
+    background-color: var(--main-color);
+}

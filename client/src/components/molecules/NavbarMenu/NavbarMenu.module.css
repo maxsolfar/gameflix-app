@@ -1,0 +1,38 @@
+.RightMenu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ButtonAdd{
+    background: #0493FF;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    gap: 12px;
+    letter-spacing: .3px;
+    line-height: 1.7rem;
+    border: .5px solid #0493FF;
+    transition: .9s ease-in-out;
+}
+
+.ButtonAdd:hover{
+    background-color: #0E101C;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+    letter-spacing: .3px;
+    line-height: 1.7rem;
+    transition: .5s ease-in-out;
+    border: .5px solid #0493FF;
+}
+
+.AvatarImg{
+    border-radius: 50%;
+    border: 2.5px solid #0493FF;
+}
+

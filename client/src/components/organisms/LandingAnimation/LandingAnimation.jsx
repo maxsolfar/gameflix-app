@@ -14,7 +14,7 @@ function LandingAnimation() {
   return (
     <>
       
-      <img src={logo} alt="title-img" className={styles.Logo}></img>
+      <img src={logo} alt="logo-gameflix" className={styles.Logo}></img>
 
       <div className={styles.Background}>
 
@@ -25,7 +25,6 @@ function LandingAnimation() {
         
         <ButtonLanding/>
         
-
         <div className={styles.Bats}></div>
         <div className={styles.Atmosphere}></div>
         <div className={styles.Ground}></div>
@@ -35,8 +34,6 @@ function LandingAnimation() {
         <div className={styles.CharacterC}></div>
       </div>
     
-      
-      
     </>
     
   )

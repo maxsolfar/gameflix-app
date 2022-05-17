@@ -9,3 +9,4 @@ module.exports = {
     URL_VIDEOGAME_DETAIL,
     URL_VIDEOGAME_GENRES,
 }
+

@@ -13,4 +13,4 @@ function MenuLLanding() {
   )
 }
 
-export default MenuLLanding
+export default MenuLLanding;

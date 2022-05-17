@@ -1,0 +1,51 @@
+.InputContainer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputSearch {
+    transition: all .7s ease-in;
+    padding: 16px 24px 16px 34px;
+    border-style: none;
+    background: #252C38;
+    border-bottom: 1px solid #0E101C;
+    width: 22%;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #0493FF;
+}   
+
+.InputSearch:focus {
+    transition: all .5s ease-in;
+    border-style: none;
+    border-bottom: 1px solid #0493FF;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #0E101C;
+}
+
+.InputSearch::placeholder {
+    color: #3E4C64;
+    font-weight: 700;
+}
+
+.IconSearch {
+    content: "";
+    background-image: url(../../../assets/svg/icons/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    margin: -50px;
+}
+
+
+.ConsoleControl{
+    width: 4%;
+    margin-right: -20px;
+    z-index: 1;
+}

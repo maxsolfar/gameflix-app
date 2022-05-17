@@ -1,0 +1,57 @@
+.BannerContainer{
+    background-image: url("../../../assets/images/back-home.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 470px;
+    padding-top: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.LeftHeader{
+ 
+}
+
+.RightHeader{
+    background-color: rgba(14,16,28,.8);
+    width: 28%;
+    padding: 20px 40px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid var(--third-color);
+    border-width: 2px 0 4px 8px;
+    position: relative;
+}
+
+.Title{
+    color: var(--third-color); 
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.Title b{
+    font-weight: 300;
+}
+
+.Subtitle{
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: #8b8f94;
+}
+.Text{
+    font-size: 1.4rem;
+    width: 70%;
+    display: inline-block;
+}
+
+
+.Character{
+    width: 35%;
+    position: absolute;
+    right: 2%;
+    top: -35%;
+    transform: scaleX(-1);
+}

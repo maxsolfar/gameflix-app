@@ -1,0 +1,19 @@
+.Navbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 50;
+    background-color: #1C1F2A;
+    border-bottom: 1px solid rgba(4,147,255,0.5);
+}
+.Container{
+    width: 96%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Logo{
+    padding: 10px;
+    height: 60px;
+}

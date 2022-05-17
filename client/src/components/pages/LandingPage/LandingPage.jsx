@@ -6,7 +6,7 @@ import styles from "./LandingPage.module.css";
 function LandingPage() {
   return (
     <>
-      <div className={styles.background}>
+      <div className={styles.Background}>
 
         <LandingAnimation />
 

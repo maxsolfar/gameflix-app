@@ -1,0 +1,130 @@
+.CardContainer{
+    background-color: #0E101C;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid #252C38;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 410px;
+}
+
+.ImageGame{
+    width: 100%;
+    /* min-height: 300px;
+    max-height: 300px; */
+    height: 100%;
+}
+
+.Overlay{
+    background: linear-gradient(0deg, rgba(14,16,28,1) 0%, rgba(14,16,28,0.3) 35% , rgba(14,16,28,0.3) 35%, rgba(14,16,28,0) 65%, rgba(14,16,28,.8) 95%, rgba(14,16,28,1) 100%);
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 380px;
+    height: 100%;
+    z-index: 1;
+
+}
+
+
+.TopCard{
+    width: 380px;
+    height: 410px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.GenresContainer{
+    position: absolute;
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    z-index: 2;
+}
+
+.Genre{
+    background-color:var(--main-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: .9rem;
+}
+.Genre:nth-child(1){
+    background-color: var(--genre-color-a);
+}
+.Genre:nth-child(2){
+    background-color: var(--genre-color-b);
+}
+.Genre:nth-child(3){
+    background-color: var(--genre-color-c);
+}
+.Genre:nth-child(4){
+    background-color: var(--genre-color-d);
+}
+.Genre:nth-child(5){
+    background-color: var(--genre-color-e);
+}
+
+.BottomCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.TitleGame{
+    margin-top: 10px;
+    font-size: 2rem;
+    transition: .6s ease-in-out;
+
+}
+
+.TitleGame:hover{
+    color: var(--main-color);
+    transition: .3s ease-in-out;
+}
+
+.BottomInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.Released{
+    color: #85888c;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.IconRating{
+    content: url("../../../assets/images/menu/icon1-select.png");
+    width: 32px;
+    height: 32px;
+}
+.RatingGame{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.PlatformsContainer{
+    border-top: 2px solid #252C38;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Platform{
+    background-color: #252C38;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.Platform:nth-child(even){
+    background-color: #424d61;
+}
+
+
