@@ -1,0 +1,31 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 20px;
+}
+
+.TextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Title{
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.Title b{
+    color: var(--main-color);
+}
+
+.Text{
+    color: rgb(211, 211, 211);
+    font-size: 1.6rem;
+}

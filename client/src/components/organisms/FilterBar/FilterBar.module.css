@@ -151,5 +151,15 @@ select::-ms-expand{
     z-index: 5;
 }
 
+.RefreshButton{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: .9s ease-in-out;
+}
 
+.RefreshButton:hover{
+    transition: .5s ease-in-out;
+    transform: rotate(-180deg);
+}
 

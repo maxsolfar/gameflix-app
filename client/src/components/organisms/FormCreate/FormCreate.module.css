@@ -1,0 +1,75 @@
+.ContainerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+.Input , .TextArea{
+    transition: all .7s ease-in;
+    padding: 14px 11px 14px 15px;
+    border-style: none;
+    background: #252C38;
+    border: 1px solid #0E101C;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    border-radius: 10px;
+    color: #0493FF;
+    font-weight: 700;
+}
+
+.Input{
+    height: 24px;
+}
+
+.Input:focus {
+    transition: all .5s ease-in;
+    border-style: none;
+    border: 1px solid #0493FF;
+    outline: none;
+    background-color: #0E101C;
+}
+
+.Input::placeholder {
+    color: #3E4C64;
+    font-weight: 700;
+}
+
+.InputName, .InputWebsite, .InputDescription, .InputDate, .InputRating, .InputImage, .InputAddImage {
+    width: 100%;
+}
+
+
+
+
+
+.Label span{
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 15px;
+    background: var(--main-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    top: -15px;
+
+}
+
+.SectionInput{
+    position: relative;
+}
+.ThreeColumns{
+    display: flex;
+    gap: 50px;
+}
+
+.OneColumn{
+    width: 100%;
+}
+
+.SectionInput label span{
+    z-index: 5;
+    
+}

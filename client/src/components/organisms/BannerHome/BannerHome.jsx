@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "./BannerHome.module.css";
 
-import char1 from "../../../assets/images/menu/characters/char1.png";
-import char2 from "../../../assets/images/menu/characters/char2.png";
-import char3 from "../../../assets/images/menu/characters/char3.png";
-import char4 from "../../../assets/images/menu/characters/char4.png";
 import char5 from "../../../assets/images/menu/characters/char5.png";
 function BannerHome() {
   return (

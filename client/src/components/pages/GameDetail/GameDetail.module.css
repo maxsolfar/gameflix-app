@@ -1,0 +1,324 @@
+.LoadingContainer{
+    margin-top: 12%;
+}
+
+.DetailContainer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.BackImg{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    opacity: .4;
+}
+
+.Overlay{
+    background: linear-gradient(0deg, rgba(14,16,28,.9) 0%, rgba(14,16,28,.9) 50% , rgba(14,16,28,.9) 100%);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.GameTitle{
+    font-size: 3.6rem;
+    color: white;
+    font-weight: 700;
+    line-height: 4.4rem;
+}
+
+.BackSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.InsideSection{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.Left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-basis: 40%;
+}
+
+.TopGame{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.GameImg{
+    width: 100%;
+    height: auto;
+    border: solid var(--main-color);
+    border-width: 4px;
+    border-radius: 15px;
+}
+
+.GameReleased{
+    font-size: 1.5rem;
+}
+
+.GameReleased b{
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
+.Genres{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    padding-top: 10px;
+}
+
+.Genre{
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+.Genre:nth-child(1){
+    background-color: var(--genre-color-a);
+}
+.Genre:nth-child(2){
+    background-color: var(--genre-color-b);
+}
+.Genre:nth-child(3){
+    background-color: var(--genre-color-c);
+}
+.Genre:nth-child(4){
+    background-color: var(--genre-color-d);
+}
+.Genre:nth-child(5){
+    background-color: var(--genre-color-e);
+}
+
+.Info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.IconRating{
+    content: url("../../../assets/images/menu/icon1-select.png");
+    width: 32px;
+    height: 32px;
+}
+
+.IconWebsite{
+    content: url("../../../assets/svg/icons/icon-cart.png");
+    width: 32px;
+    height: 32px;
+}
+
+.WebsiteGame{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 5px;
+    font-weight: 700;
+    transition: .7s ease-in;
+}
+
+.WebsiteGame:hover{
+    color: var(--main-color);
+    transition: .3s ease-in;
+}
+
+.RatingGame{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.Right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    gap: 25px;
+}
+
+.SubTitles{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    padding: 5px 0;
+    font-weight: 700;
+}
+
+.GameDescription{
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.PlatformContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.Platforms{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.Platform{
+    font-size: 1.3rem;
+    background-color: #606060;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.PlatformTitle{
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.IconPlatform{
+    content: url("../../../assets/images/menu/console-control2.png");
+    width: 48px;
+    height: 48px;
+}
+
+.Platform:nth-child(even){
+    background-color: #249948;
+}
+
+.Stores{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #1C1F2A;
+    border-radius: 15px;
+}
+
+.LeftStore{
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    border-radius: 15px 0px 0px 15px;
+    font-size: 1.3rem;
+}
+.RightStore{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.Store{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.IconPS{
+    content: url("../../../assets/images/stores/ps-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconSteam{
+    content: url("../../../assets/images/stores/steam-logo.png");
+    width: 36px;
+    height: 36px;
+}
+.IconPlay{
+    content: url("../../../assets/images/stores/play-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconXbox{
+    content: url("../../../assets/images/stores/xbox-logo.png");
+    width: 36px;
+    height: 36px;
+}
+.IconApp{
+    content: url("../../../assets/images/stores/app-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconGOG{
+    content: url("../../../assets/images/stores/gog-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconNintendo{
+    content: url("../../../assets/images/stores/nintendo-logo.png");
+    height: 36px;
+}
+
+.Icon360{
+    content: url("../../../assets/images/stores/microsoft-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconItchio{
+    content: url("../../../assets/images/stores/ichio-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+.IconEpic{
+    content: url("../../../assets/images/stores/epic-logo.png");
+    width: 36px;
+    height: 36px;
+}
+
+
+.Tags{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.Tag{
+    border: 1px solid rgba(255, 255, 255, .5);
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.TagTitle{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+}

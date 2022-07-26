@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Pagination.module.css";
 
+import { getPage } from "../../../actions/actions";
+import { useDispatch } from "react-redux";
+
 import previousIcon from "../../../assets/svg/icons/prev-active.png";
 import previousIconD from "../../../assets/svg/icons/prev-disabled.png";
 import nextIcon from "../../../assets/svg/icons/next-active.png";
@@ -8,7 +11,9 @@ import nextIconD from "../../../assets/svg/icons/next-disabled.png";
 
 function Pagination({ gamesPerPage, totalGames, currentPage, paginate }) {
   const pages = [];
+  const dispatch = useDispatch();
   const totalPages = Math.ceil(totalGames / gamesPerPage);
+
 
   for (let i = 1; i <= totalPages; i++) {
     pages.push(i);
@@ -16,6 +21,7 @@ function Pagination({ gamesPerPage, totalGames, currentPage, paginate }) {
 
   const changePage = (number) => {
     paginate(number);
+    dispatch(getPage(number));
   };
 
   return (
@@ -36,7 +42,7 @@ function Pagination({ gamesPerPage, totalGames, currentPage, paginate }) {
       <li>
         {currentPage !== totalPages
         ? (<button className={styles.ButtonPaginate} onClick={() => currentPage !== totalPages && changePage(currentPage + 1)}><img src={nextIcon} alt="previous-icon-active"/></button>)
-        : (<button className={styles.ButtonPaginate} disabled="true"><img src={nextIconD} alt="next-icon-disabled"/></button>)
+        : (<button className={styles.ButtonPaginate} disabled={true}><img src={nextIconD} alt="next-icon-disabled"/></button>)
         }
       </li>
     </ul>

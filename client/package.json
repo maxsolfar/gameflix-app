@@ -15,7 +15,9 @@
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "sweetalert2": "^11.4.8",
+    "sweetalert2-react-content": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

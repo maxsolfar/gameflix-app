@@ -1,0 +1,37 @@
+.Topbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 50;
+    top: 0;
+    background-color: #1C1F2A;
+    border-bottom: 1px solid rgba(4,147,255,0.5);
+}
+.Container{
+    width: 96%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: 1.2s ease-in-out;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.Logo{
+    padding: 10px;
+    height: 50px;
+}
+
+.Text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.Container:hover{
+    transform: scale(1.05);
+    transition: .9s ease-in-out;
+}
+

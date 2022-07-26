@@ -1,5 +1,5 @@
 const axios = require("axios");
-const { Videogame, Genre } = require("../../db");
+const { Videogame, Genre, Platform, Tag, Store } = require("../../db");
 
 
 const getApiData = async (url) => {
@@ -33,18 +33,67 @@ const getApiData = async (url) => {
 
 const getDBData = async () => {
   let DBData = await Videogame.findAll({
-    include: {
+    include: [
+    {
       model: Genre,
+      attributes: ["name"],
+      through: {
+        attributes: [],
+      }, 
+    },
+    {
+      model: Platform,
       attributes: ["name"],
       through: {
         attributes: [],
       },
     },
+  ],
   });
   return DBData;
 };
 
+
+const getDBCompleteData = async () => {
+  let DBData = await Videogame.findAll({
+    include: [
+    {
+      model: Genre,
+      attributes: ["name"],
+      through: {
+        attributes: [],
+      }, 
+    },
+    {
+      model: Platform,
+      attributes: ["name"],
+      through: {
+        attributes: [],
+      },
+    },
+    {
+      model: Store,
+      attributes: ["name", "domain"],
+      through: {
+        attributes: [],
+      },
+    },
+    {
+      model: Tag,
+      attributes: ["name"],
+      through: {
+        attributes: [],
+      },
+    },
+  ],
+  });
+  return DBData;
+};
+
+
 module.exports = {
   getApiData,
   getDBData,
+  getDBCompleteData
 };
+

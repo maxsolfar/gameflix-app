@@ -26,11 +26,17 @@ module.exports = (sequelize) => {
       type:DataTypes.DECIMAL(4,2),
       allowNull: true,
     },
-    platforms:{
-      type: DataTypes.ARRAY(DataTypes.TEXT),
-      allowNull: false,
-    },
     background_image: {
+      type: DataTypes.TEXT,  
+      allowNull: true,  
+      validate: { isUrl: true }  
+    },
+    background_image_additional: {
+      type: DataTypes.TEXT,  
+      allowNull: true,  
+      validate: { isUrl: true }  
+    },
+    website: {
       type: DataTypes.TEXT,  
       allowNull: true,  
       validate: { isUrl: true }  

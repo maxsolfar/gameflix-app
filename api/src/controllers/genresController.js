@@ -39,7 +39,7 @@ const addGenresToDB = async () => {
 
 const getGenresDB = async (req, res, next) => {
   try {
-    await addGenresToDB();
+    /* await addGenresToDB(); */
     let genresDB = await Genre.findAll();
     const genres = genresDB?.map(genre => {
       return {

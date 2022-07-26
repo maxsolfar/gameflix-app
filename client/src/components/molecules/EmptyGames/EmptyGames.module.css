@@ -1,0 +1,54 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    gap: 10px;
+}
+
+.Title{
+    color: white;
+    font-size: 2.8rem;
+}
+
+.ButtonRefresh{
+    background: #0493FF;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: .3px;
+    line-height: 1.7rem;
+    border: .5px solid #0493FF;
+    transition: .9s ease-in-out;
+}
+
+.ButtonRefresh:hover{
+    background-color: #0E101C;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+    letter-spacing: .3px;
+    line-height: 1.7rem;
+    transition: .5s ease-in-out;
+    border: .5px solid #0493FF;
+}
+
+
+.Img{
+    animation: scaleImg 2.1s ease-in infinite;
+}
+
+@keyframes scaleImg {
+    0%{
+        transform: scale(.96);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.96);
+    }
+}

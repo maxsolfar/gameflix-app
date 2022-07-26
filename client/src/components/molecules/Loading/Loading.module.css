@@ -1,0 +1,54 @@
+.ContainerLoading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    height: 250px;
+    overflow-x:hidden;
+}
+
+.CharacterB{
+    background-image: url("../../../assets/images/character-c.png");
+    width: 125px;
+    height: 140px;
+    z-index: 3; 
+    position: absolute;
+    bottom: 5%; 
+    left: 50%;
+
+    animation: run 1.5s steps(12) infinite,
+                forward2 40s linear infinite;
+}
+
+.CharacterC{
+    background-image: url("../../../assets/images/character-e.png");
+    width: 125px;
+    height: 140px;
+    z-index: 3; 
+    position: absolute;
+    bottom: 5%; 
+    left: 40%;
+
+    animation: run 1.5s steps(12) infinite,
+                forward2 40s linear infinite;
+}
+
+
+@keyframes run{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1500px;
+    }
+}
+
+@keyframes forward2{
+    0%{
+        transform: translateX(-125px);
+    }
+    100%{
+        transform: translateX(2500px);
+    }
+}

@@ -9,10 +9,10 @@ function Card({id,name, released, rating, platforms, genres, img}) {
       <section className={styles.CardContainer}>
         <div className={styles.TopCard}>
           <div className={styles.GenresContainer}>
-            { genres && genres.map((genre) => (
+            { genres && genres.map((genre, index) => (
                 genre.hasOwnProperty("name")
-                ? <p className={styles.Genre}>{genre.name}</p> 
-                : <p className={styles.Genre}>{genre}</p> 
+                ? <p key={index} className={styles.Genre}>{genre.name}</p> 
+                : <p key={index} className={styles.Genre}>{genre}</p> 
               ))
             }
           </div>
@@ -20,7 +20,7 @@ function Card({id,name, released, rating, platforms, genres, img}) {
           <img className={styles.ImageGame} src={img} alt="img-game" />
           
         </div>
-        <Link to={`/games/${id}`}>
+        <Link to={`/game/${id}`}>
           <h3 className={styles.TitleGame}>{name}</h3>   
         </Link>      
         <div className={styles.BottomCard}>
@@ -30,10 +30,12 @@ function Card({id,name, released, rating, platforms, genres, img}) {
           </div>
           
           <div className={styles.PlatformsContainer}>
-            {platforms && platforms.map((platform,index) => (
-                index < 3 &&
-                <span className={styles.Platform}>{platform}</span>
-                ))
+
+            { platforms && platforms.map((platform, index) => (
+                platform.hasOwnProperty("name") 
+                ? index < 3 && <p key={index} className={styles.Platform}>{platform.name}</p> 
+                : index < 3 && <p key={index} className={styles.Platform}>{platform}</p> 
+              ))
             }
           </div>
           
